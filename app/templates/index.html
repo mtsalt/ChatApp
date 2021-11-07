@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id=auth-page>
+        <div id="auth-main-label">
+            <div id="sign-in-to-chatapp">Sign in to ChatApp</div>
+            <p><a href="http://localhost:8080/account">don't you have account?</a></p>
+        </div>
+        <div id="auth-window">
+            <div id="id-div">
+                <div class="auth-label">ID</div>
+                <input type="text" id="id">
+            </div>
+            <div id="password-div">
+                <div class="auth-label">PASSWORD</div>
+                <input type="password" id="password">
+            </div>
+            <button id="send-button" onclick="send_button_click()">Send</button>
+        </div>
+    </div>
+</body>
+</html>

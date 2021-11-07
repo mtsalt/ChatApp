@@ -1,0 +1,59 @@
+#auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+#auth-main-label {
+    font-size: 140%;
+    width: 220px;
+    padding: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#auth-window {
+    display: block;
+    width: 200px;
+    padding: 20px;
+    border: solid 1px gray;
+    border-radius: 10px;
+}
+
+#id-div {
+    /* background-color:bisque; */
+    margin-bottom: 10px;
+}
+
+#password-div {
+    /* background-color: darkgray; */
+    margin-bottom: 15px;
+}
+
+.auth-label {
+    margin-bottom: 3px;
+}
+
+#sign-in-to-chatapp {
+    font-size: 110%;
+}
+input {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+p {
+    font-size: 70%;
+    text-decoration: underline;
+}
+
+#send-button{
+    width: 100%;
+    margin: 10px auto 0px auto;
+    padding: 5px 0px;
+    background-color: #2da44e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
