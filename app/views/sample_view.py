@@ -1,19 +1,34 @@
-from flask import render_template
+from flask import render_template, request
 from . import main
 
 
 @main.route("/", methods=['GET', 'POST'])
 def index():
-    return render_template("index.html")
+    if request.method == 'GET':
+        # TODO セッションが残っていれば、そのままチャット画面表示
+        return render_template("index.html")
+
+    if request.method == 'POST':
+        pass
 
 
 @main.route("/register", methods=['GET', 'POST'])
 def register():
-    return render_template("register.html")
+
+    if request.method == 'GET':
+        return render_template("register.html")
+
+    if request.method == 'POST':
+        pass
 
 
 @main.route("/login", methods=['GET', 'POST'])
 def login():
-    return render_template("login.html")
+
+    if request.method == 'GET':
+        return render_template("login.html")
+
+    if request.method == 'POST':
+        pass
 
 
