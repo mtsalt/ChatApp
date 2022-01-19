@@ -16,7 +16,7 @@ def index():
 def register():
 
     if request.method == 'GET':
-        return render_template("register.html")
+        return render_template("auth/register.html")
 
     if request.method == 'POST':
         pass
@@ -26,7 +26,7 @@ def register():
 def login():
 
     if request.method == 'GET':
-        return render_template("login.html")
+        return render_template("auth/login.html")
 
     if request.method == 'POST':
         pass
