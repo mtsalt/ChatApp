@@ -285,3 +285,36 @@ label:hover:before {
   color: #aaaaaa;
   font-weight: bold;
 }
+
+.top-selector{
+    color: #aaaaaa;
+    width: 200px;
+    padding: 3px;
+    margin: 10px auto;
+    font-size: 25px;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.top-selector a{
+    color: #aaaaaa;
+}
+.top-selector:hover{
+    font-weight: bold;
+}
+
+
+
+.top-terms-of-service {
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
+.top-terms-of-service a{
+    color: #aaaaaa;
+}
+
+.top-terms-of-service:hover {
+    color: black;
+}
