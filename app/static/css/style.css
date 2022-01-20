@@ -309,6 +309,8 @@ label:hover:before {
 .top-terms-of-service {
     color: #aaaaaa;
     cursor: pointer;
+    width: 150px;
+    margin: 10px auto;
 }
 
 .top-terms-of-service a{
