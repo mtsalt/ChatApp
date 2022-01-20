@@ -298,7 +298,9 @@ label:hover:before {
 }
 
 .top-selector a{
+    display: block;
     color: #aaaaaa;
+    padding: auto;
 }
 .top-selector:hover{
     font-weight: bold;
