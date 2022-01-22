@@ -1,20 +1,16 @@
 from flask import render_template, request
 from . import main
-
-import logging
-logging.basicConfig(level=logging.DEBUG, filename="./app/log/chatapp.log")
-logger = logging.getLogger(__name__)
+from flask import current_app
 
 
 @main.route("/", methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':
-        logger.info("get index page.")
         # TODO セッションが残っていれば、そのままチャット画面表示
+        #current_app.logger.info("get")
         return render_template("index.html")
 
     if request.method == 'POST':
-        logger.info("post index page.")
         pass
 
 
