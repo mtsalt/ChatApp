@@ -36,7 +36,7 @@
                         </div>
                         <div class="form-group">
                             <label for="reg_password_confirm" class="sr-only">password Confirm</label>
-                            <input type="password" class="form-control" id="password_confirm" name="password_confirm" placeholder="confirm password">
+                            <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="confirm password">
                         </div>
 
                         <div class="form-group">
@@ -61,7 +61,7 @@
 <!--                            <label for="reg_agree">i agree with <a href="#">terms</a></label>-->
 <!--                        </div>-->
                     </div>
-                    <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+                    <button type="submit" class="login-button" onclick="execRegister()"><i class="fa fa-chevron-right"></i></button>
                 </div>
                 <div class="etc-login-form">
                     <p>already have an account? <a href="{{ url_for('main.login') }}">login here</a></p>
