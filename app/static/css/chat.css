@@ -1,6 +1,5 @@
 @media screen and (min-width: 481px){ 
     html {
-        background: #efefef;
         height: 100%;
         min-height: 600px;
         width: 100%;
@@ -14,12 +13,24 @@
         display: flex; 
         background: white;
     }
-    #side-bar-sub{
+    #side-bar-main{
+        width: 40px;
         height: 100%;
+        background:lightslategray;
+        display:flex;
+        flex-flow: column;
+    }
+    #side-bar-main img{
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+    }
+    #side-bar-sub{
+        height: 95%;
         width: 25%;
         /* min-width: 400px; */
         border-right: solid lightgray 1px;
-        padding-right: 10px;
+        
         /* margin: 0; */
 
         -webkit-user-select: none;
@@ -27,9 +38,13 @@
         -ms-user-select: none;
         user-select: none;
 
-        /* background: gray; */
+    }
+    #side-bar-title{
+        height: 5%;
+        border: solid lightgray 1px;
     }
     #main{
+        position: relative;
         height: 100%;
         /* background-color: lightsalmon; */
         width: 75%;
@@ -103,6 +118,28 @@
 
     }
 
+    #room-name{
+        border: solid lightgray 1px;
+        font-weight: bold;
+        font-size: 200%;
+        height: 5%;
+    }
+    #chat-history{
+        height: 80%;
+    }
+    #history{
+        background: lightgreen;
+        width: 80%;
+        margin: 0 auto;
+        height: 100%;
+    }
+    #editor{
+        height: 7%;
+        background: yellow;
+        position: absolute;
+	    bottom: 0;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px){
