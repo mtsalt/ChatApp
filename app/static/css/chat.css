@@ -29,7 +29,6 @@
         height: 95%;
         width: 25%;
         /* min-width: 400px; */
-        border-right: solid lightgray 1px;
         
         /* margin: 0; */
 
@@ -42,6 +41,9 @@
     #side-bar-title{
         height: 5%;
         border: solid lightgray 1px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 200%;
     }
     #main{
         position: relative;
@@ -67,6 +69,7 @@
         padding: 0 20px;
         overflow-y: scroll;
         margin: 0 auto;
+        border-right: solid lightgray 1px;
     }
     ::-webkit-scrollbar{
         width: 10px;
@@ -82,6 +85,9 @@
         background: #ccc;
         border-radius: 10px;
         box-shadow: none;
+    }
+    .friend:first-child {
+        margin-top: 5px;
     }
     .friend{
         display: flex;
@@ -119,6 +125,7 @@
     }
 
     #room-name{
+        text-align: center;
         border: solid lightgray 1px;
         font-weight: bold;
         font-size: 200%;
@@ -128,17 +135,27 @@
         height: 80%;
     }
     #history{
-        background: lightgreen;
+        font-size: 110%;
         width: 80%;
         margin: 0 auto;
         height: 100%;
+        overflow-y: scroll;
     }
-    #editor{
+    #editor-area{
         height: 7%;
-        background: yellow;
+        background: lightgray;
         position: absolute;
 	    bottom: 0;
         width: 100%;
+        padding: 0 5%;
+    }
+    #editor{
+        width: 80%;
+        outline: none;
+        resize: none;
+    }
+    .editor-icon{
+        width: 2%;
     }
 }
 
